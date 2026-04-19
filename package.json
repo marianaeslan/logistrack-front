@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:watch": "nodemon --watch app --watch components --watch public --watch next.config.ts --ext ts,tsx,js,jsx,css --ignore '.next/**' --ignore 'node_modules/**' --exec \"npm run build && next start\"",
     "lint": "eslint"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "nodemon": "^3.1.14",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
