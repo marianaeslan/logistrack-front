@@ -7,13 +7,15 @@ interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "dashboard" | "search" | "add";
   icon?: boolean;
   text: string;
+  size: "small" | "medium" | "large";
 }
 
-export function BtnPrimary({
+export function Button({
   className,
   variant,
   icon = false,
   text,
+  size = "medium",
   ...buttonProps
 }: BtnProps) {
   const variants = {
@@ -23,10 +25,19 @@ export function BtnPrimary({
   };
 
   const variantClass =
-    "bg-primary text-white rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition-colors duration-300 flex items-center gap-2 cursor-pointer";
+    "bg-primary text-white rounded-md hover:bg-secondary hover:text-black transition-colors duration-300 inline-flex items-center gap-2 cursor-pointer";
+
+  const sizeClasses = {
+    small: "text-sm px-3 py-1",
+    medium: "text-base px-4 py-2",
+    large: "text-lg px-6 py-3",
+  };
 
   return (
-    <button className={`${variantClass} ${className || ""}`} {...buttonProps}>
+    <button
+      className={`${variantClass} ${sizeClasses[size]} ${className || ""}`}
+      {...buttonProps}
+    >
       {icon && variants[variant]}
       {text}
     </button>

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:watch": "nodemon --watch app --watch components --watch public --watch next.config.ts --ext ts,tsx,js,jsx,css --ignore '.next/**' --ignore 'node_modules/**' --exec \"npm run build && next start\"",
+    "watch": "nodemon --watch app --watch components --watch public --watch next.config.ts --ext ts,tsx,js,jsx,css --ignore '.next/**' --ignore 'node_modules/**' --exec \"npm run build && next start\"",
     "lint": "eslint"
   },
   "dependencies": {
