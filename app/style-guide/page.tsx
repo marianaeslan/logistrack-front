@@ -2,6 +2,7 @@ import { Button } from "@/components/atoms/Button";
 import { Logo } from "@/components/atoms/Logo";
 import { NavbarNavigation } from "@/components/molecules/NavbarNavigation";
 import { Navbar } from "@/components/organisms/Navbar";
+import { Tag } from "@/components/atoms/Tag";
 
 export default function ComponentsPage() {
   return (
@@ -15,6 +16,7 @@ export default function ComponentsPage() {
         </header>
 
         <div className="space-y-12">
+          {/* Molecules */}
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">Molecules</h2>
 
@@ -33,7 +35,7 @@ export default function ComponentsPage() {
 
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">Atoms</h2>
-
+            {/* Atoms */}
             <div className="rounded-lg border border-grey/30 bg-white p-6 dark:bg-black">
               <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-lg font-medium">Button</h3>
@@ -66,10 +68,46 @@ export default function ComponentsPage() {
                 </div>
               </div>
             </div>
+            <div className="rounded-lg border border-grey/30 bg-white p-6 dark:bg-black">
+              <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-lg font-medium">Tag</h3>
+                <span className="text-sm text-grey">
+                  Variações de cores e tamanhos
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-6">
+                <Tag
+                  text="Delivered"
+                  size="small"
+                  color="delivered"
+                  icon="delivered"
+                />
+                <Tag
+                  text="Out for delivery"
+                  size="medium"
+                  color="outForDelivery"
+                  icon="outForDelivery"
+                />
+                <Tag
+                  text="Pending"
+                  size="large"
+                  color="pending"
+                  icon="pending"
+                />
+                <Tag
+                  text="Canceled"
+                  size="small"
+                  color="canceled"
+                  icon={null}
+                />
+              </div>
+            </div>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">Organisms</h2>
+            {/* Organisms */}
             <div className="rounded-lg border border-grey/30 bg-white p-6 text-grey dark:bg-black">
               <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-lg font-medium">Navbar</h3>

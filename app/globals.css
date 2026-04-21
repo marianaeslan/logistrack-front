@@ -7,6 +7,19 @@
   --white: #fcfefd;
   --black: #161c1a;
   --grey: #6b7974;
+
+  --purple-600: #8916d7;
+  --purple-50: #fbf5ff;
+  --purple-200: #edd4ff;
+
+  --green-700: #007a55;
+  --green-50: #e8fff6;
+  --green-200: #90f6ce;
+
+  --yellow-700: #c24c00;
+  --yellow-50: #fffbea;
+  --yellow-200: #ffe57b;
+
   --foreground: var(--black);
 }
 
@@ -18,6 +31,22 @@
   --color-white: var(--white);
   --color-black: var(--black);
   --color-grey: var(--grey);
+
+  --color-purple: var(--purple-600);
+  --color-purple-50: var(--purple-50);
+  --color-purple-200: var(--purple-200);
+  --color-purple-600: var(--purple-600);
+
+  --color-green: var(--green-700);
+  --color-green-50: var(--green-50);
+  --color-green-200: var(--green-200);
+  --color-green-700: var(--green-700);
+
+  --color-yellow: var(--yellow-700);
+  --color-yellow-50: var(--yellow-50);
+  --color-yellow-200: var(--yellow-200);
+  --color-yellow-700: var(--yellow-700);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
