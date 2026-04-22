@@ -3,6 +3,7 @@ import { Logo } from "@/components/atoms/Logo";
 import { NavbarNavigation } from "@/components/molecules/NavbarNavigation";
 import { Navbar } from "@/components/organisms/Navbar";
 import { Tag } from "@/components/atoms/Tag";
+import { TrackingInput } from "@/components/atoms/TrackingInput";
 
 export default function ComponentsPage() {
   return (
@@ -29,6 +30,7 @@ export default function ComponentsPage() {
               </div>
               <div className="w-full overflow-hidden rounded-md">
                 <NavbarNavigation />
+                <NavbarNavigation textColor="dark" />
               </div>
             </div>
           </section>
@@ -100,6 +102,27 @@ export default function ComponentsPage() {
                   size="small"
                   color="canceled"
                   icon={null}
+                />
+              </div>
+            </div>
+            <div className="rounded-lg border border-grey/30 bg-white p-6 dark:bg-black">
+              <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-lg font-medium">Search input</h3>
+                <span className="text-sm text-grey">
+                  Variações de inputs com e sem ícone
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-6 mb-2">
+                <TrackingInput
+                  placeholder="Digite o código de rastreamento"
+                  label="Rastreio"
+                />
+              </div>
+              <div className="flex flex-wrap items-center gap-6">
+                <TrackingInput
+                  placeholder="Digite o código de rastreamento"
+                  icon
                 />
               </div>
             </div>
